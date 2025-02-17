@@ -1,0 +1,172 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#242424] text-white min-h-screen;
+}
+
+/**************************************
+ * 02.Preloader Style
+ *************************************/
+ #preloader-wapper {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 99999999;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #242424; /* Just to make sure it's visible */
+}
+
+#preloader-wapper::before,#preloader-wapper::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 50%;
+	background: rgb(9, 7, 12);
+	top: 0;
+	left: 0;
+	transition: .4s;
+	-webkit-transition: height .4s;
+	-moz-transition: height .4s;
+	-ms-transition: height .4s;
+	-o-transition: height .4s;
+}
+
+#preloader-wapper::after {
+	top: auto;
+	bottom: 0;
+}
+
+#preloader-wapper.loaded::before,#preloader-wapper.loaded::after {
+	height: 0%;
+}
+
+.loader-middle {
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: all .8s;
+  z-index: 555;
+}
+
+
+.loader-middle::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	left: 50%;
+	background: #ea1538;
+	animation: showLine 700ms ease-in-out 0s forwards;
+	-o-animation: showLine 700ms ease-in-out 0s forwards;
+	-webkit-animation: showLine 700ms ease-in-out 0s forwards;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+
+@keyframes showLine {
+	0% {
+		width: 0;
+		opacity: 0;
+	}
+
+	100% {
+		width: 100%;
+		opacity: 1;
+	}
+}
+
+@-o-keyframes showLine {
+	0% {
+		width: 0;
+		opacity: 0;
+	}
+
+	100% {
+		width: 100%;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes showLine {
+	0% {
+		width: 0;
+		opacity: 0;
+	}
+
+	100% {
+		width: 100%;
+		opacity: 1;
+	}
+}
+
+.loader-middle::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: -100px;
+	top: 0;
+	animation: loader-middle 2s cubic-bezier(.86,0,.07,1) infinite;
+	-o-animation: loader-middle 2s cubic-bezier(.86,0,.07,1) infinite;
+	-webkit-animation: loader-middle 2s cubic-bezier(.86,0,.07,1) infinite;
+	animation-delay: 1200ms;
+}
+
+@keyframes loader-middle {
+	0% {
+		left: -100%;
+		background: #fff;
+	}
+
+	100% {
+		left: 100%;
+		background: #fff;
+	}
+}
+
+@-o-keyframes loader-middle {
+	0% {
+		left: -100%;
+		background: #fff;
+	}
+
+	100% {
+		left: 100%;
+		background: #fff;
+	}
+}
+
+@-webkit-keyframes loader-middle {
+	0% {
+		left: -100%;
+		background: #fff;
+	}
+
+	100% {
+		left: 100%;
+		background: #fff;
+	}
+}
+
+.loader-middle.loaded {
+	width: 100%;
+	opacity: 0;
+}
+
+.loader-middle.loaded::after {
+	opacity: 0;
+}
