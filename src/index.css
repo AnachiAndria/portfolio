@@ -8,6 +8,24 @@ body {
 }
 
 /**************************************
+ * 01.Font import
+ *************************************/
+ @font-face {
+	font-family: "Josefin";
+	src: url("/public/font/JosefinSans-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "Montserrat";
+	src: url("/public/font/Montserrat-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+
+/**************************************
  * 02.Preloader Style
  *************************************/
  #preloader-wapper {
