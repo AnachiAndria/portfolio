@@ -14,10 +14,6 @@ function App() {
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
 
       </p>
       
