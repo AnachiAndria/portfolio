@@ -8,18 +8,38 @@ const socialLinks = [
     { icon: "fab fa-dribbble", url: "https://dribbble.com" }
 ];
 
-const rotatingTexts = ["exemple1", "exemple2", "exemple3"];
+const rotatingTexts = [" exemple1", " exemple2", " exemple3"];
 
 const Home = () => {
-    const [currentText, setCurrentText] = useState(0);
+    const [text, setText] = useState(""); // Holds the displayed text
+    const [currentTextIndex, setCurrentTextIndex] = useState(0); // Which word we are on
+    const [isDeleting, setIsDeleting] = useState(false); // Track if we are deleting
+    const typingSpeed = 100; // Speed of typing
+    const deletingSpeed = 50; // Speed of deleting
+    const pauseTime = 2000; // Pause before deleting
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentText((prev) => (prev + 1) % rotatingTexts.length);
-        }, 2000); // Change every 2 seconds
+        const fullText = rotatingTexts[currentTextIndex];
 
-        return () => clearInterval(interval);
-    }, []);
+        if (isDeleting) {
+            // If deleting, remove one letter
+            if (text.length > 0) {
+                setTimeout(() => setText(text.slice(0, -1)), deletingSpeed);
+            } else {
+                // When done deleting, move to the next word
+                setIsDeleting(false);
+                setCurrentTextIndex((prev) => (prev + 1) % rotatingTexts.length);
+            }
+        } else {
+            // If typing, add one letter
+            if (text.length < fullText.length) {
+                setTimeout(() => setText(fullText.slice(0, text.length + 1)), typingSpeed);
+            } else {
+                // Pause before deleting
+                setTimeout(() => setIsDeleting(true), pauseTime);
+            }
+        }
+    }, [text, isDeleting, currentTextIndex]);
 
     return (
         <section className="relative w-full h-165 flex items-center justify-center">
@@ -39,18 +59,21 @@ const Home = () => {
             <div className="absolute inset-0 bg-opacity-50"></div>
 
             {/* Social Links */}
-            <div className="absolute right-10 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 z-10">
+            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col  z-50 size-30">
+                <p className="text-white tracking-widest mb-1 rotate-90 origin-bottom  whitespace-nowrap social">
+                <a >Social Links -----</a>
                 {socialLinks.map((link, index) => (
                     <a 
                         key={index} 
                         href={link.url} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-white text-xl hover:text-gray-300 transition"
+                        className="pl-3"
                     >
                         <i className={link.icon}></i>
                     </a>
                 ))}
+                </p>
             </div>
 
             {/* Content */}
@@ -62,7 +85,7 @@ const Home = () => {
                     I help your business and individuals by developing websites. I build websites 
                     to make you successful in the long term.
                     <br />
-                    We are Professional <span className="text-red-500 font-bold">{rotatingTexts[currentText]}</span>
+                    We are Professional <span className="text-red-500 font-bold">{text}|</span>
                 </p>
 
                 <button className="mt-6 px-6 py-3 bg-red-500 hover:bg-red-600 text-white rounded-full text-lg">

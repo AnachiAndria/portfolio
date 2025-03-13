@@ -5,11 +5,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/**************************************
+ * 01.Font import
+ *************************************/
+ @font-face {
+	font-family: "Josefin";
+	src: url("/public/font/JosefinSans-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "Montserrat";
+	src: url("/public/font/Montserrat-Bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
+/**************************************/  
+
 body {
   @apply bg-[#242424] text-white min-h-screen;
+  font-family: "Josefin";
+}
+.social a:hover i{
+    color: #ea1538;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 
-/* Customize scrollbar */
+/**************************************
+ * 02.Customize scrollbar
+ *************************************/
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -27,42 +55,23 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(45deg, #ff4b2b, #ff416c);
 }
-
-
+/**************************************/  
 
 
 /**************************************
- * 01.Font import
+ * 03.Preloader Style
  *************************************/
- @font-face {
-	font-family: "Josefin";
-	src: url("/public/font/JosefinSans-Regular.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-  }
-  
-  @font-face {
-	font-family: "Montserrat";
-	src: url("/public/font/Montserrat-Regular.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
-  }
-  
-
-/**************************************
- * 02.Preloader Style
- *************************************/
- #preloader-wapper {
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 99999999;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background-color: #242424; /* Just to make sure it's visible */
+#preloader-wapper {
+width: 100%;
+height: 100vh;
+top: 0;
+left: 0;
+position: fixed;
+z-index: 99999999;
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+background-color: #242424; /* Just to make sure it's visible */
 }
 
 #preloader-wapper::before,#preloader-wapper::after {
@@ -90,15 +99,15 @@ body {
 }
 
 .loader-middle {
-  position: absolute;
-  width: 50%;
-  height: 1px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-  transition: all .8s;
-  z-index: 555;
+position: absolute;
+width: 50%;
+height: 1px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+overflow: hidden;
+transition: all .8s;
+z-index: 555;
 }
 
 
@@ -212,3 +221,4 @@ body {
 .loader-middle.loaded::after {
 	opacity: 0;
 }
+/*************************************/
