@@ -1,25 +1,18 @@
 import './index.css'
 import { Loader } from "./components/Loader"
-import {Navigation} from "./components/Navigation"
-import { Home } from './components/home';
+import { Navigation } from "./components/Navigation"
+import { Home } from './components/home'
+import { DecorativeLines } from './components/DecorativeLines'  
+import { About } from './components/About'
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen relative">
+      <DecorativeLines />
       <Loader />
-      <Navigation/>
-      <Home/>
-      <p>
-        <p>espacement </p>
-
-        <p>about</p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore eveniet, temporibus quam, distinctio, magnam natus sapiente in facilis adipisci explicabo sit enim labore dolores dicta minima ipsam. Repellat, nihil doloremque!
-
-      </p>
-      
+      <Navigation />
+      <Home />
+      <About/>
     </div>
   );
 }
