@@ -88,7 +88,7 @@ const Home = () => {
                     We are Professional <span className="text-red-500 font-bold">{text}|</span>
                 </p>
 
-                <button className="mt-6 px-6 py-3 bg-red-500 hover:bg-red-600 text-white rounded-full text-lg">
+                <button className="mt-6 px-6 py-3 bg-red-500 text-white border-1 border-red-500 hover:bg-transparent hover:border-1 hover:border-white rounded-full text-lg transition duration-500">
                     Get In Touch
                 </button>
             </div>

@@ -23,11 +23,11 @@ const About = () =>{
                     {/* Content Section */}
                     <div className="lg:w-3/5 w-full text-gray-800 dark:text-gray-300">
                         <h3 className="text-2xl font-semibold">
-                            Welcome to <span className="text-blue-500">My Profile</span>
+                            Welcome to <span className="text-red-500">My Profile</span>
                         </h3>
                         <h3 className="text-xl mt-2">- It's my pleasure to introduce myself.</h3>
                         <p className="mt-4">
-                            Hello, I'm <strong className="text-blue-500">Achina Mamy ANDRIANANTENAINA from Madagascar</strong>. I'm a front-end
+                            Hello, I'm <strong className="text-red-500">Achina Mamy ANDRIANANTENAINA from Madagascar</strong>. I'm a front-end
                             developer & UI/UX designer with 5+ years of experience. With more than 5 years of experience in web design
                             and front-end development, I have a deep understanding of the technologies and the processes required for
                             realizing a successful web project from A to Z.
@@ -51,12 +51,15 @@ const About = () =>{
                         {/* Download CV Button */}
                         <a
                         href="#0"
-                        className="inline-block mt-6 px-6 py-3 text-white bg-blue-500 hover:bg-blue-600 rounded-lg shadow-md transition duration-300"
+                        className="inline-block mt-6 px-6 py-3 text-white bg-red-500 border-1 border-red-500 hover:bg-transparent hover:border-1 hover:border-white rounded-full shadow-md transition duration-500"
                         >
                             Download my CV
                         </a>
                     </div>
                 </div>
+            </div>
+            <div className="pt-16">
+                <p>pioooo</p>
             </div>
         </section>
     );
