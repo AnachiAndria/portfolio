@@ -63,9 +63,9 @@ const About = () =>{
             
 
             {/* Skills Section with SVG */}
-            <section className="pt-16 w-full bg-[#181818] flex flex-col md:flex-row">
+            <section className="py-10 w-full bg-[#181818] flex flex-col md:flex-row">
   {/* First part - SVG */}
-  <div className="w-full md:w-3/10 p-4 flex justify-center items-center">
+  <div className="w-full md:w-2/10 p-4 flex justify-center items-center">
     <img 
       src="/public/img/coding-bro.svg" 
       alt="My SVG" 
@@ -73,45 +73,160 @@ const About = () =>{
     />
   </div>
 
-    <div className="w-full md:w-1/10 p-0 flex justify-center items-center">
-        <h2 className="left-0 tracking-widest mb-1 rotate-270 origin-top  whitespace-nowrap text-4xl font-bold text-gray-900 dark:text-white">My Skills</h2>
+    <div className="w-full md:w-1/10 p-0 flex justify-center items-center -mr-15">
+        <h2 className="tracking-widest mb-1 rotate-270 whitespace-nowrap text-4xl -mt-85 font-bold text-gray-900 dark:text-white">My Skills</h2>
     </div>
 
   {/* Second part - Skills List */}
-  <div className="w-full md:w-6/10 p-4">
-    <ul className="max-w-md space-y-1  list-inside ">
-        <li className="flex items-center">
-            <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
-                Languages
+  <div className="w-full md:w-7/10  flex flex-col md:flex-row">
+
+    <div className="w-full md:w-5/10 flex py-2 m-2">
+        <ul className="max-w-md space-y-4  list-inside w-full">
+            <div className="flex flex-col">
+                <div className="p-4">
+                    <li className="flex items-center">
+                    <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                    </svg>
+                    <h3 className="text-2xl font-bold">Languages</h3>
+                    </li>
+                </div>
                 
-        </li>
-        <li className="flex items-center">
-            <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
-                Stacks & libraries
-        </li>
-        <li className="flex items-center">
-            <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
-                Databases
-        </li>
-        <li className="flex items-center">
-            <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
-                Tools
-        </li>
-        <li className="flex items-center">
-            <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-            </svg>
-                Other
-        </li>
-    </ul>
+                <div className="px-4 pb-4 -mt-2">
+                    <div className="flex flex-wrap gap-4">
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">JavaScript</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Java</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">TypeScript</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">PHP</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Python</a>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col">
+                <div className="p-4">
+                    <li className="flex items-center">
+                    <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                    </svg>
+                    <h3 className="text-2xl font-bold">Back-end</h3>
+                    </li>
+                </div>
+                
+                <div className="px-4 pb-4 -mt-2">
+                    <div className="flex flex-wrap gap-4">
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Node</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Express</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">CodeIgniter</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Hibernate</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">JSP</a>
+                    </div>
+                </div>
+            </div>
+            <div className="grid grid-rows-2 ">
+                <div className="row-start-1   p-4">
+                    <li className="flex items-center">
+                        <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                        </svg>
+                        <h3 className="text-2xl bold">Databases</h3> 
+                    </li>
+                </div>
+                
+                <div className="px-4 pb-4 -mt-2">
+                    <div className="flex flex-wrap gap-4">
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">MySQL</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">PostgreSQL</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">SQLite</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">MongoDB</a>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col">
+                <div className="p-4">
+                    <li className="flex items-center">
+                    <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                    </svg>
+                    <h3 className="text-2xl font-bold">Méthodologies</h3>
+                    </li>
+                </div>
+                
+                <div className="px-4 pb-4 -mt-2">
+                    <div className="flex flex-wrap gap-4">
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Agile</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Merise</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">2TUP</a>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div className="w-full md:w-5/10 flex py-2 m-2">
+        <ul className="max-w-md space-y-4  list-inside w-full">
+            <div className="flex flex-col">
+                <div className="p-4">
+                    <li className="flex items-center">
+                    <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                    </svg>
+                    <h3 className="text-2xl font-bold">Front-end</h3>
+                    </li>
+                </div>
+                
+                <div className="px-4 pb-4 -mt-2">
+                    <div className="flex flex-wrap gap-4">
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Vue</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">React</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Bootstrap</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Tailwind CSS</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">JQuery</a>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col">
+                <div className="p-4">
+                    <li className="flex items-center">
+                    <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                    </svg>
+                    <h3 className="text-2xl font-bold">Design et UX/UI</h3>
+                    </li>
+                </div>
+                
+                <div className="px-4 pb-4 -mt-2">
+                    <div className="flex flex-wrap gap-4">
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Canva</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Figma</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Adobe XD</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Adobe</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Photoshop</a>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col">
+                <div className="p-4">
+                    <li className="flex items-center">
+                    <svg className="w-3.5 h-3.5 me-2 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                    </svg>
+                    <h3 className="text-2xl font-bold">Design et UX/UI</h3>
+                    </li>
+                </div>
+                
+                <div className="px-4 pb-4 -mt-2">
+                    <div className="flex flex-wrap gap-4">
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Canva</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Figma</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Adobe XD</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Adobe</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Photoshop</a>
+                    </div>
+                </div>
+            </div>
+
+        </ul>
+    </div>
   </div>
 </section>
 
