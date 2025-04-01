@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 
 const socialLinks = [
     { icon: "fab fa-facebook-f", url: "https://facebook.com" },
-    { icon: "fab fa-twitter", url: "https://twitter.com" },
-    { icon: "fab fa-instagram", url: "https://instagram.com" },
-    { icon: "fab fa-behance", url: "https://www.behance.net" },
-    { icon: "fab fa-dribbble", url: "https://dribbble.com" }
+    { icon: "fab fa-linkedin", url: "https://www.linkedin.com/in/achina-andrianantenaina" },
+    { icon: "fab fa-x-twitter", url: "https://x.com/AchinaMamy" },
+    // { icon: "fab fa-codeur", url: "https://www.behance.net" },
+    // { icon: "fab fa-dribbble", url: "https://dribbble.com" }
 ];
 
 const rotatingTexts = [" exemple1", " exemple2", " exemple3"];

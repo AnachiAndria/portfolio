@@ -28,25 +28,26 @@ const About = () =>{
                             </h3>
                             <h3 className="text-xl mt-2">- It's my pleasure to introduce myself.</h3>
                             <p className="mt-4">
-                                Hello, I'm <strong className="text-red-500">Achina Mamy ANDRIANANTENAINA from Madagascar</strong>. I'm a front-end
-                                developer & UI/UX designer with 5+ years of experience. With more than 5 years of experience in web design
-                                and front-end development, I have a deep understanding of the technologies and the processes required for
-                                realizing a successful web project from A to Z.
+                                Hello, I'm <strong className="text-red-500">Achina Mamy ANDRIANANTENAINA from Madagascar</strong>. I'm a versatile developer specializing in web, mobile, 
+                                and desktop applications, with expertise in full-stack development and system & network administration. 
+                                Passionate about technology and innovation, I thrive on solving complex problems and crafting high-performance, 
+                                scalable solutions. Always eager to learn and explore new technologies, I ensure that every project I work on is optimized, 
+                                efficient, and built for success from start to finish.
                             </p>
                             
                             <h3 className="text-xl font-semibold mt-6">What are my values?</h3>
                             <p className="mt-2">
-                                When developing a web project, I focus on understanding the business goals and delivering a final product
-                                that will really work for the client.
+                            I transform business objectives into tangible solutions, 
+                            ensuring every project I develop delivers real-world value that resonates with clients and exceeds their expectations.
                             </p>
 
                             {/* Contact Info */}
                             <p className="mt-6">
-                            <b>Phone:</b> +105 773 321 7771
+                            <b>Phone:</b> +261 34 16 484 18
                             <br />
-                            <b>E-mail:</b> demo@maslin.com
+                            <b>E-mail:</b> mamyachina@gmail.com
                             <br />
-                            <b>Skype:</b> jackmaslin
+                            <b>Linkedin:</b> Mamy Achina ANDRIANANTENAINA
                             </p>
 
                             {/* Download CV Button */}
@@ -199,8 +200,7 @@ const About = () =>{
                         <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Canva</a>
                         <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Figma</a>
                         <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Adobe XD</a>
-                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Adobe</a>
-                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Photoshop</a>
+                        <a className="border border-gray-300 rounded-full py-1 px-3 inline-block text-sm hover:border-red-500 transition-colors">Adobe Photoshop</a>
                     </div>
                 </div>
             </div>
