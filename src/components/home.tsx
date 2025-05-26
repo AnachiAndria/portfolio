@@ -46,13 +46,13 @@ const Home = () => {
             {/* Background Image */}
             <div 
                 className="absolute inset-0 bg-cover bg-center"
-                style={{
-                    backgroundImage: `url('/public/img/home.jpg')`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center center",
-                    backgroundBlendMode: "darken",
-                    filter: "brightness(45%)"
-                }}
+                // style={{
+                //     backgroundImage: `url('/public/img/home.jpg')`,
+                //     backgroundSize: "cover",
+                //     backgroundPosition: "center center",
+                //     backgroundBlendMode: "darken",
+                //     filter: "brightness(45%)"
+                // }}
             ></div>
 
             {/* Dark Overlay to improve contrast */}
